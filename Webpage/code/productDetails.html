@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Product Details | RMJ Inc (2015) </title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="../images/RMJ-Favicon.png" type="image/x-icon">
+</head>
+<body>
+
+	<header class="header">
+	  <a href="">
+			<img src="../images/RMJ-Logo.jpg" class="logo" />
+	  </a>
+
+	  <input class="menu-btn" type="checkbox" id="menu-btn" />
+
+	  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+	  <ul class="menu">
+	    <li><a href="#work">Home</a></li>
+	    <li><a href="#about"> Our Brands </a></li>
+	    <li><a href="#careers"> Xmas Catalog </a></li>
+	    <li><a href="#contact"> Store </a></li>
+	    <li><a href="#contact"> About Us </a></li>
+	    <li><a href="#contact"> About Barbados </a></li>
+	    <li><a href="#contact"> Marketing </a></li>
+	    <li><a href="#contact"> Contact Us </a></li>
+	  </ul>
+	</header>
+
+	<form id="SearchAndCart">
+		<!-- Search Bar -->
+		<div style="float: left; width: 50%; margin-left: 25%; margin-top: 10em;">
+			<input type="text" placeholder="Search Product ..." name="search" class="searchBar">
+
+		&nbsp &nbsp 
+
+    	<button type="submit"> Go </button>
+
+		</div>
+		
+    	<div style="display: inline-block; margin-top: 10em;"> <a href="Cart.html"> <img src="../images/cartImg.png" class="cartImg"> </a> </div>
+
+    	<br>
+	</form>
+
+	<div id="ProductDetails-Container">
+		<div id="Back"> <a href=""> < Back </a> </div>
+
+		<div id="ProductDiv">
+			<div id="ProductImage">
+				<div class="image" id="ProductDetailsImage">
+					<img src="../images/ketchup.jpg" alt="ketchup" />
+				</div>
+			</div>
+
+			<div id="ProductDetails">
+				<div class="description">
+				    <span> Types of Ketchup </span>
+				    <span> Ketchup </span>
+				    <span> Blue Ketchup </span>
+				</div>
+				 
+				<div class="quantity">
+				    <button class="plus-btn" type="button" name="button">
+				    	+
+				    </button>
+
+				    <input type="text" name="name" value="1">
+
+				    <button class="minus-btn" type="button" name="button">
+				    	-
+				    </button>
+				</div>
+				 
+				<div class="total-price"> $569.35 </div>
+			</div>
+		</div>
+
+		<div id="CartButtons">
+			<button> Add To Cart </button>
+			<button> Buy Now </button>
+		</div>
+	</div>
+
+</body>
+</html>

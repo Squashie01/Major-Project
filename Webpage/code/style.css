@@ -1,0 +1,632 @@
+body
+{
+  margin: 0px;
+  font-family: "Open Sans",sans-serif;
+}
+
+button:focus
+{
+  outline: none;
+}
+
+button
+{
+  color: white;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+
+
+
+/* Nav Bar */
+.logo
+{
+  width: 3.7em; 
+  display: block; 
+  float: left; 
+  padding-top: 1%; 
+  padding-bottom: 1%; 
+  margin-left: 5%;"
+}
+
+.header 
+{
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  border-top: 1px solid #E1E8EE;
+}
+
+.header ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  background-color: #fff;
+  padding-top: 0.3em;
+}
+
+.header li a 
+{
+  display: block;
+  text-decoration: none;
+  padding: 20px 20px;
+  color: rgb(29, 66, 135);
+}
+
+.header li a:hover,
+.header .menu-btn:hover 
+{
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.header li a:active,
+.header .menu-btn:active 
+{
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.header .logo 
+{
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu 
+{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon 
+{
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon 
+{
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after 
+{
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before 
+{
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after 
+{
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn 
+{
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu 
+{
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon 
+{
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before 
+{
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after 
+{
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after 
+{
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) 
+{
+  .header li 
+  {
+    float: left;
+  }
+  .header li a 
+  {
+    padding: 20px 30px;
+  }
+  .header .menu 
+  {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon
+  {
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* Search Bar and Cart Button */
+form
+{
+  text-align: center;
+}
+
+.searchBar
+{
+  border: 3px solid rgb(199, 219, 110);
+  border-radius: 5px;
+  width: 55%;
+  height: 2.5em;
+}
+
+.searchBar:focus
+{
+  outline: none;
+}
+
+.cartImg
+{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+button
+{
+  height: 3.1em;
+  width: 5.2em;
+  border: none;
+  background-color: rgb(0, 150, 78);
+}
+
+select
+{
+  padding: 0.2em;
+  width: 10%;
+  border-radius: 5px;
+  border: 3px solid rgb(0, 150, 78);
+}
+
+
+
+
+
+
+
+
+
+/* Cart Style Stuff */
+.flexbox-container
+{
+  display: flex;
+}
+
+.div1
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  width:75%;
+  height: 75vh auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+}
+
+.CartDiv
+{
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width:75%;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+}
+
+.div2
+{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 60%;
+  height: 41em;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.form1
+{
+  text-align:center;
+  margin-top: 15%;
+}
+
+.form1 input
+{
+  width: 70%;
+}
+
+@media only screen and (max-width: 550px)
+{
+  .flexbox-container, #ProductDetailsContainer
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* Order Review Style */
+.itemName
+{
+  margin-left: 25%;
+  margin-right: 25%;
+  float: left;
+}
+
+.UnitPriceName
+{
+  margin-right: 21%;
+  float: left;
+}
+
+.TotalName
+{
+  float: left;
+  margin-right: 1%;
+}
+
+.title
+{
+  padding: 20px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid #E1E8EE;
+}
+
+.item 
+{
+  padding: 20px 30px;
+  height: 120px;
+}
+
+.button
+{
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.delete-btn
+{
+  display: inline-block;
+  Cursor: pointer;
+  width: 18px;
+  height: 17px;
+  float: left;
+  padding-top: 10px;
+}
+
+.description 
+{
+  width: 115px;
+  float: left;
+}
+ 
+.description span 
+{
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child 
+{
+    margin-bottom: 5px;
+}
+
+.description span:last-child 
+{
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity 
+{
+  float: left;
+}
+
+.quantity input 
+{
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+.plus-btn
+{
+  color: white;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.minus-btn
+{
+  color: white;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.total-price 
+{
+  float: left;
+  width: 83px;  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+.image
+{
+  float: left;
+  max-height: 15vh;
+  max-width: 15%;
+  margin-right: 5%;
+  margin-left: 3%;
+  display: flex;
+}
+
+.image img
+{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+
+
+
+
+/* Store Home Page */
+#StoreHomePage-FlexBox-Container
+{
+  display: flex;
+  flex-direction:column;
+}
+
+#Filters
+{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+select
+{
+  width: 10em;
+  margin-left: 7.1%;
+  float: left;
+}
+
+select:focus
+{
+  outline: none;
+}
+
+#Products
+{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#ImageProduct
+{
+  max-width: 75%;
+  height: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 12.5%;
+}
+
+.TheseAreProducts
+{
+  width: 10em;
+  height: 15em;
+  margin-top: 6.5%;
+  margin-left: 7.1%;
+  float: left;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+}
+
+#MainPageProduct
+{
+  margin-top: 10%;
+  margin-left: 12.5%
+}
+
+
+
+
+
+
+
+
+
+
+/* Product Detils */
+#ProductDetails-Container
+{
+  display: flex;
+  flex-direction:column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#Back
+{
+  float: left;
+  width: 80%;
+}
+
+#ProductDiv
+{
+  display: flex;
+  margin-top: 3%;
+}
+
+#ProductDetailsImage
+{
+  max-width: 95%;
+  max-height: 95%;
+  float: left;
+}
+
+#ProductImage
+{
+  width: 15em;
+  height: 15em;
+  margin-left: -10%;
+}
+
+#ProductDetails
+{
+  height: auto;
+  width: auto;
+  margin-top: 3%;
+  margin-left: 5%;
+  float: left;
+}
+
+#CartButtons
+{
+  margin-left: 15%;
+}
+
+#CartButtons button
+{
+  width: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 550px)
+{
+  #StoreHomePage-FlexBox-Container, #ProductDetails-Container, #ProductDiv
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  #CartButtons
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+    margin-top: 3%;
+  }
+
+  .TheseAreProducts
+  {
+    width: 10em;
+    height: 15em;
+    margin-top: 6.5%;
+    margin-left: 8.5%;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+  }
+
+  #ProductDetails
+  {
+    height: auto;
+    width: auto;
+    margin-top: 3%;
+    margin-left: -5%;
+    float: left;
+  }
+}
+
+
+
